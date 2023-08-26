@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pop_up {
+    width: 350px;
+    background: #30fff2;
+    border: 5px double blue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 33px 13px #999;
+    transform: scale(.5) translateY(-900px) ;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    z-index: 111;
+}
+.show{
+    transform:scale(1) translateY(100%) ;
+    opacity: 1;
+    transition: 1s;
+}
+.pop_up h6 {
+    background: blue;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+.popup_con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    background:black;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pop_up h1 {
+    color: #323d9e;
+    font-size: 38px;
+    font-family: cursive;
+    filter: drop-shadow(2px 4px 13px black);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.slider_wrapper {
+    height: 100vh;
+    overflow: hidden;position: relative;
+}
+
+.img{
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+}
+
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}header{
+    background: #30fff2;
+    padding: 10px 0;
+}
+
+
+.home_right_wrapper {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+
+.slider_item {
+    position: absolute;
+    transition:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    opacity: 0;
+    z-index: 0;
+}
+
+.active{
+    /* transform: scale(1.5); */
+    opacity:1;
+    transition: 4s;
+    z-index: 11;
+}
+
+@media (max-width:756px) {
+    .menu{
+        display: none;
+    }
+    .btn{
+        display: block;
+    }
+}
